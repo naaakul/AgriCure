@@ -148,7 +148,7 @@ const App: React.FC = () => {
 
     setLoading(true);
     try {
-        const res = await axios.post("https://agri-cure-d8gfspt75-naaakuls-projects.vercel.app/upload", formData, {
+        const res = await axios.post("https://agri-cure-9rc0gkc2x-naaakuls-projects.vercel.app/upload", formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
             },
