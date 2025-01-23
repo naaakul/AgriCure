@@ -230,7 +230,7 @@ const App: React.FC = () => {
       {response && (
         <div className="text-[#b8b8b8] w-full p-4">
             <h1 className="text-lg font-bold">{response.charAt(0).toUpperCase() + response.slice(1)}, {prob}%</h1>
-            <img className="mb-5 w-1/2 rounded-2xl" src={preview}/>
+            <img className="mb-5 w-1/2 rounded-2xl" src={preview || "default_image_url.jpg"}/>
             <h1 className="text-lg font-bold">Description:</h1>
             <p className="mb-5">{pack?.des}</p>
             <h1 className="text-lg font-bold">Treatment:</h1>
